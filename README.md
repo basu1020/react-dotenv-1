@@ -87,6 +87,18 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
+#### Using the `process.env` global variable
+
+```jsx
+import React from "react";
+
+const MyComponent = () => {
+  return <div>{ process.env.API_URL }</div>;
+};
+
+export default MyComponent;
+```
+
 ## Known limitations
 
 This only supports one environment (so only one `.env` file) and is not meant to do more.
